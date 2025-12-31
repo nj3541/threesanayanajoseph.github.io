@@ -1,133 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Threesa Nayana Joseph | EEE </title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Threesa Nayana Joseph | EEE Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+  <header class="header">
+    <div class="logo">Threesa Nayana Joseph<span>.EEE</span></div>
+    <nav class="nav">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <button class="burger" id="burger">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
 
-<!-- Animated Grid Background -->
-<div class="grid-bg"></div>
+  <main>
+    <!-- HERO -->
+    <section id="home" class="section hero">
+      <div class="hero-text">
+        <p class="hero-badge">B.Tech Electrical & Electronics Engineering • 2nd Year</p>
+        <h1>Threesa Nayana Joseph</h1>
+        <h2>EEE Student | Circuits • Power • Embedded</h2>
+        <p class="hero-desc">
+          Undergraduate Electrical and Electronics Engineering student from Kerala Technological University
+          with hands‑on experience in smart power monitoring and analog sensing projects. Comfortable with
+          MATLAB, LTspice, and ESP‑based embedded systems, and exploring data‑driven approaches in engineering.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn ghost">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-illustration">
+        <div class="profile-card">
+          <div class="avatar">⚡</div>
+          <p><strong>Location:</strong> Thrissur, Kerala, IN</p>
+          <p><strong>College:</strong> KTU • B.Tech EEE</p>
+          <p><strong>Focus:</strong> Circuits, power, embedded, basic ML</p>
+        </div>
+      </div>
+    </section>
 
-<!-- SYSTEM STATUS -->
-<div id="status">SYSTEM ACTIVE</div>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-heading">
+        <h2>About</h2>
+        <p>A quick overview of who you are as an engineer in training.</p>
+      </div>
 
-<!-- HERO SECTION -->
-<header class="hero">
-  <h1 class="neon gradient-text">Threesa Nayana Joseph</h1>
-  <h3 class="gradient-text">
-    Electrical & Electronics Engineering
-  </h3>
-  <p>
-    Embedded Systems • Instrumentation • PCB Design
-  </p>
-</header>
+      <div class="about-grid">
+        <div>
+          <h3>Profile</h3>
+          <p>
+            I am a second‑year B.Tech Electrical and Electronics Engineering student at Kerala Technological
+            University. I enjoy understanding how systems work from fundamental physics up to hardware and
+            software implementation.
+          </p>
+          <p>
+            My current focus areas include circuit analysis, analog electronics, electromagnetic theory,
+            and applying basic data science and machine learning concepts to engineering problems.
+          </p>
+        </div>
+        <div>
+          <h3>What I am looking for</h3>
+          <ul class="list">
+            <li>Core EEE internships in power, electronics, or embedded systems</li>
+            <li>Collaborative projects in IoT, automation, and energy monitoring</li>
+            <li>Mentorship and exposure to real‑world engineering workflows</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Quick facts</h3>
+          <ul class="list">
+            <li>Year: 2nd year B.Tech EEE at KTU</li>
+            <li>Interests: IoT, power, circuits, basic ML for engineering</li>
+            <li>Open to: remote collaboration, open‑source, hackathons</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-<!-- TURTLE STYLE CANVAS -->
-<canvas id="turtleCanvas"></canvas>
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <h2>Projects</h2>
+        <p>Hands‑on electrical and electronics projects that connect theory with practice.</p>
+      </div>
 
-<!-- ABOUT -->
-<section class="reveal">
-  <h2>About</h2>
-  <p>
-    I design and build real-world electrical and embedded systems.
-    My focus is on measurement systems, signal processing,
-    and hardware–software integration with strong engineering fundamentals.
-  </p>
-</section>
+      <div class="cards-grid">
+        <!-- Smart Power Analyzer -->
+        <article class="card">
+          <div class="card-tag">IoT • Power • ESP</div>
+          <h3>IoT‑Based Smart Power Analyzer</h3>
+          <p>
+            Designed and built a smart power analyzer to measure voltage, current, power, and energy
+            consumption in real time using ESP‑based hardware and cloud monitoring.
+          </p>
+          <ul class="card-metrics">
+            <li>Interfaced sensors with ESP module for live measurements</li>
+            <li>Sent data to a web/dashboard interface for visualization</li>
+            <li>Used readings to analyze load profile and energy usage patterns</li>
+          </ul>
+          <p class="tech-stack">
+            <strong>Tech:</strong> ESP/NodeMCU, Arduino IDE, sensors, basic web/IoT stack
+          </p>
+        </article>
 
-<!-- SKILLS -->
-<section class="reveal">
-  <h2>Technical Skills</h2>
+        <!-- BFO Metal Detector -->
+        <article class="card">
+          <div class="card-tag">Analog • Sensing</div>
+          <h3>BFO Metal Detector</h3>
+          <p>
+            Built a Beat Frequency Oscillator metal detector that uses the frequency difference between two
+            oscillators to sense nearby metal objects.
+          </p>
+          <ul class="card-metrics">
+            <li>Designed and tuned oscillator circuits in LTspice</li>
+            <li>Implemented the circuit on breadboard/PCB and tested response</li>
+            <li>Calibrated the detector to improve sensitivity and stability</li>
+          </ul>
+          <p class="tech-stack">
+            <strong>Tech:</strong> Analog circuits, LTspice simulation, breadboarding/PCB
+          </p>
+        </article>
 
-  <div class="cards">
-    <div class="card">
-      <h4>⚡ Core Electrical</h4>
-      <p>
-        Circuit Analysis<br>
-        Analog Electronics<br>
-        Electrical Machines
-      </p>
-    </div>
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-heading">
+        <h2>Skills</h2>
+        <p>Core EEE fundamentals combined with software and tools.</p>
+      </div>
 
-    <div class="card">
-      <h4>🔧 Embedded Systems</h4>
-      <p>
-        Arduino<br>
-        Sensor Interfacing<br>
-        OLED / LCD
-      </p>
-    </div>
+      <div class="skills-grid">
+        <div class="skills-group">
+          <h3>Core EEE</h3>
 
-    <div class="card">
-      <h4>🧩 Design Tools</h4>
-      <p>
-        Proteus<br>
-        EasyEDA<br>
-        PCB Layout
-      </p>
-    </div>
+          <div class="skill">
+            <span>Circuit analysis & network theory</span>
+            <div class="skill-bar"><span style="width: 85%"></span></div>
+          </div>
 
-    <div class="card">
-      <h4>💻 Programming</h4>
-      <p>
-        C (Embedded)<br>
-        Python<br>
-        Git & GitHub
-      </p>
-    </div>
-  </div>
-</section>
+          <div class="skill">
+            <span>Analog electronics & device behaviour</span>
+            <div class="skill-bar"><span style="width: 80%"></span></div>
+          </div>
 
-<!-- PROJECTS -->
-<section class="reveal">
-  <h2>Projects</h2>
+          <div class="skill">
+            <span>Electromagnetic field basics</span>
+            <div class="skill-bar"><span style="width: 75%"></span></div>
+          </div>
 
-  <div class="project-card">
-    <h3>🔌 Dual Mode Clamp Meter</h3>
-    <p>
-      AC voltage, current, and power measurement system using isolated
-      sensors and embedded signal processing.
-    </p>
-    <a href="https://github.com/nj3541/dual-mode-clamp-meter" class="tech-link">
-      View on GitHub →
-    </a>
-  </div>
+          <div class="skill">
+            <span>Power systems fundamentals</span>
+            <div class="skill-bar"><span style="width: 70%"></span></div>
+          </div>
+        </div>
 
-  <div class="project-card">
-    <h3>🐢 Python Turtle Graphics Lab</h3>
-    <p>
-      Mathematical and signal-inspired visual patterns created using
-      Python Turtle graphics.
-    </p>
-    <a href="https://github.com/nj3541/turtle-graphics-lab" class="tech-link">
-      View Python Code →
-    </a>
-  </div>
-</section>
+        <div class="skills-group">
+          <h3>Software & Tools</h3>
+          <ul class="list">
+            <li>MATLAB for numerical analysis and simulations</li>
+            <li>LTspice for analog and circuit simulation</li>
+            <li>ESP / Arduino ecosystem for embedded IoT projects</li>
+            <li>Basic C/C++ and Python for coding and scripting</li>
+            <li>GitHub for code hosting and version control</li>
+          </ul>
+        </div>
 
-<!-- CONTACT -->
-<section class="reveal">
-  <h2>Contact</h2>
-  <p>
-    📧 nayanajoseph3571@gmail.com <br>
-    🔗 https://www.github.com/nj3541 <br>
-    🔗 https://www.linkedin.com/in/threesa-nayana-joseph-77b09a32a
-  </p>
-</section>
+        <div class="skills-group">
+          <h3>Additional</h3>
+          <ul class="list">
+            <li>Technical report writing and lab documentation</li>
+            <li>Teamwork in lab and project environments</li>
+            <li>Debugging hardware and code under time pressure</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-<!-- FOOTER -->
-<footer>
-  © 2026 Threesa Nayana Joseph | Electrical & Electronics Engineering
-</footer>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="section-heading">
+        <h2>Experience & Achievements</h2>
+        <p>Academic highlights, online courses, and technical activities.</p>
+      </div>
 
-<script src="main.js"></script>
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-tag">Academics</div>
+          <h3>Coursework</h3>
+          <p>
+            Core subjects completed or in progress: Circuit Analysis, Analog Electronics,
+            Electromagnetic Theory, Electrical Machines, and Data Science/AI for EEE.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-tag">Courses / Certifications</div>
+          <h3>Online Learning</h3>
+          <p>
+            Add your NPTEL, Coursera, Udemy, or other certifications related to EEE, programming,
+            or data science here.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-tag">Clubs / Events</div>
+          <h3>Clubs & Competitions</h3>
+          <p>
+            List participation in IEEE student branch, college tech fests, hackathons,
+            or project exhibitions here.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section-heading">
+        <h2>Contact</h2>
+        <p>Reach out for internships, collaborations, or project discussions.</p>
+      </div>
+
+      <div class="contact-layout">
+        <div>
+          <h3>Details</h3>
+          <ul class="list">
+            <li><strong>Email:</strong> nayanajoseph3571@gmail.com</li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/threesa-nayana-joseph-77b09a32a" target="_blank">linkedin.com/in/Threesa Nayana Joseph</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/nj3541" target="_blank">github.com/nj3541</a></li>
+          </ul>
+        </div>
+
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="cname">Your name</label>
+            <input id="cname" type="text" required />
+          </div>
+          <div class="form-group">
+            <label for="cemail">Your email</label>
+            <input id="cemail" type="email" required />
+          </div>
+          <div class="form-group">
+            <label for="cmessage">Message</label>
+            <textarea id="cmessage" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn primary full-width">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Threesa Nayana Joseph. EEE Portfolio.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-
